@@ -108,11 +108,11 @@ $(document).ready(function () {
 	
 	// Countdown //
 	$('#countdown').countdown({
-		until: new Date(2014, 10 - 1, 9), // new Date(year, mth - 1, day, hr, min, sec) - date/time to count down to 
+		until: new Date(2016, 2 - 1, 28), // new Date(year, mth - 1, day, hr, min, sec) - date/time to count down to 
 		// or numeric for seconds offset, or string for unit offset(s): 
 		// 'Y' years, 'O' months, 'W' weeks, 'D' days, 'H' hours, 'M' minutes, 'S' seconds 
 		// until: '-1m +1d', for demo
-		timezone: -4, // The timezone (hours or minutes from GMT) for the target times, or null for client local 
+		timezone: +2, // The timezone (hours or minutes from GMT) for the target times, or null for client local 
 		layout: '{d<}<div class="span3"><div class="digit-container">{dn}<span class="label-container">{dl}</span></div></div>{d>}{h<}<div class="span3"><div class="digit-container">{hn}<span class="label-container">{hl}</span></div></div>{h>}{m<}<div class="span3"><div class="digit-container">{mn}<span class="label-container">{ml}</span></div></div>{m>}{s<}<div class="span3"><div class="digit-container">{sn}<span class="label-container">{sl}</span></div></div>{s>}',
 		timeSeparator: '', // Separator for time periods 
 		isRTL: false, // True for right-to-left languages, false for left-to-right 
@@ -182,7 +182,7 @@ $(document).ready(function () {
 	
 	// Google Map //
 	$('#map_canvas').gmap({
-		'center': new google.maps.LatLng(40.77288, -73.98299), // Change this to your desired latitude and longitude
+		'center': new google.maps.LatLng(40.200506, 29.049894), // Change this to your desired latitude and longitude
 		'zoom': 17,
 		'mapTypeControl': false,
 		'navigationControl': false,
@@ -215,12 +215,12 @@ $(document).ready(function () {
 	$('#map_canvas').gmap().bind('init', function () {
 		$('#map_canvas').gmap('addMarker', {
 			'id': 'marker-1',
-			'position': '40.77288,-73.98299',
+			'position': '40.200506, 29.049894',
 			'bounds': false,
 			'icon': image
 		}).click(function () {
 			$('#map_canvas').gmap('openInfoWindow', {
-				'content': '<h4>Eventify</h4><p><strong>Downtown Conference Center</strong><br>Columbus Ave. New York, NY 10019 </p>'
+				'content': '<h4>Clean World Conference</h4><p><strong>Merinos ACCM</strong><br>Ataturk Kongre Kultur Merkezi, Merinos Parki, Osmangazi / BURSA </p>'
 			}, this);
 		});
 	});

@@ -108,7 +108,7 @@ $(document).ready(function () {
 	
 	// Countdown //
 	$('#countdown').countdown({
-		until: new Date(2016, 2 - 1, 28), // new Date(year, mth - 1, day, hr, min, sec) - date/time to count down to 
+		until: new Date(2016, 1 - 1, 28), // new Date(year, mth - 1, day, hr, min, sec) - date/time to count down to 
 		// or numeric for seconds offset, or string for unit offset(s): 
 		// 'Y' years, 'O' months, 'W' weeks, 'D' days, 'H' hours, 'M' minutes, 'S' seconds 
 		// until: '-1m +1d', for demo

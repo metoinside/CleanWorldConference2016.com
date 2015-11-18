@@ -1036,6 +1036,9 @@ a.instagram:hover {
 .event-entry .entry-title {
 	margin: 0 0 5px;
 }
+.event-entry {
+	height: 600px;
+}
 .entry-content {
 	padding: 20px 15px;
 }

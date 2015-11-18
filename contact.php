@@ -1156,7 +1156,7 @@ $captchaType                        = null;
  * 
  * @var string The e-mails of contact mail receiver
  */
-$emails                             = 'yourname@yourdomain.com';
+$emails                             = 'info@cleanworldconference2016.com';
 /**
  * Set auto reply system name and e-mail
  * from where the acknowledgement to be sent.
@@ -1165,7 +1165,7 @@ $emails                             = 'yourname@yourdomain.com';
  * 
  * @var string  The e-mail for auto reply system
  */
-$autoResponder                      =   'noreply@yourdomain.com';
+$autoResponder                      =   'info@cleanworldconference2016.com';
 
 /**
  * Set desired type of mail to send
@@ -1180,6 +1180,12 @@ $mailType                           =   'html';
  * Now call the class method  to implement all the options
  * and get the response as per need
  */
+Contact::getObject()->mailType = "smtp";
+Contact::getObject()->smtpHost = "mx1.hostinger.web.tr";
+Contact::getObject()->smtpPort = "2525";
+Contact::getObject()->smtpUserName = "info@cleanworldconference2016.com";
+Contact::getObject()->smtpPassword = "VNva5xP198";
+
 Contact::getObject()->respondRequest(
     $captchaType,
     $mailType,
